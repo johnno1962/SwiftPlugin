@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB4B11842211035F00FB6B6A /* PluginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B11832211035F00FB6B6A /* PluginAPI.swift */; };
+		BB4B11852211035F00FB6B6A /* PluginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B11832211035F00FB6B6A /* PluginAPI.swift */; };
 		BBC6E0582210835600635FD6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC6E0572210835600635FD6 /* main.swift */; };
 		BBC6E0692210840B00635FD6 /* MyPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC6E0682210840B00635FD6 /* MyPlugin.swift */; };
 /* End PBXBuildFile section */
@@ -35,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		BB4B117F2210DF5200FB6B6A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BB4B11832211035F00FB6B6A /* PluginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginAPI.swift; sourceTree = "<group>"; };
 		BBC6E0542210835600635FD6 /* SwiftPlugin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftPlugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC6E0572210835600635FD6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		BBC6E062221083E700635FD6 /* MyPlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				BBC6E0572210835600635FD6 /* main.swift */,
+				BB4B11832211035F00FB6B6A /* PluginAPI.swift */,
 			);
 			path = SwiftPlugin;
 			sourceTree = "<group>";
@@ -186,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB4B11842211035F00FB6B6A /* PluginAPI.swift in Sources */,
 				BBC6E0582210835600635FD6 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB4B11852211035F00FB6B6A /* PluginAPI.swift in Sources */,
 				BBC6E0692210840B00635FD6 /* MyPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

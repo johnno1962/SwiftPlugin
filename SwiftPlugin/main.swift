@@ -24,24 +24,15 @@ func LoadPlugin<T>(onto: T.Type, dylib: String) -> T.Type {
 
 print("Hello, World!")
 
-// Class MyPlugin from bundle is overlayed onto this class
-
-open class MyPlugin {
-
-    open class func getInstance() -> MyPlugin {
-        fatalError("getInstanceMain")
-    }
-
-    open func incCounter() -> Int {
-        fatalError("incCounterMain")
-    }
-}
-
 var info = Dl_info()
 dladdr(&info, &info)
 
 let pluginPath = URL(fileURLWithPath: String(cString: info.dli_sname)).deletingLastPathComponent()
     .appendingPathComponent("MyPlugin.bundle/Contents/MacOS/MyPlugin").path
+
+// Class MyPlugin from bundle is overlayed onto this placeholder class
+
+open class MyPlugin: PluginAPI {}
 
 let cl = LoadPlugin(onto: MyPlugin.self, dylib: pluginPath)
 
