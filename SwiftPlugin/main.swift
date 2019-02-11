@@ -35,8 +35,8 @@ let pluginPath = URL(fileURLWithPath: String(cString: info.dli_sname)).deletingL
 
 open class MyPlugin: PluginAPI {}
 
-let cl = LoadPlugin(onto: MyPlugin.self, dylib: pluginPath)
+let clazz = LoadPlugin(onto: MyPlugin.self, dylib: pluginPath)
 
-let i = cl.getInstance()
-print(i.incCounter())
-print(i.incCounter())
+let instance = clazz.getInstance()
+print(instance.incCounter())
+print(instance.incCounter())

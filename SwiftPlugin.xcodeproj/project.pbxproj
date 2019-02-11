@@ -332,7 +332,6 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.johnholdsworth.SwiftPluginApp;
-				PRODUCT_MODULE_NAME = SwiftPlugin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -353,7 +352,6 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.johnholdsworth.SwiftPluginApp;
-				PRODUCT_MODULE_NAME = SwiftPlugin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};

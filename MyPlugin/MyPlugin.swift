@@ -6,6 +6,13 @@
 //  Copyright © 2019 John Holdsworth. All rights reserved.
 //
 
+// way to find plugin class not involving mangling
+
+@_cdecl("principalClass")
+public func principalClass() -> UnsafeRawPointer {
+    return unsafeBitCast(MyPlugin.self, to: UnsafeRawPointer.self)
+}
+
 // Concrete implementation of the plugin
 
 open class MyPlugin: PluginAPI {
