@@ -10,7 +10,7 @@
 
 open class PluginAPI {
 
-    open class func getInstance() -> MyPlugin {
+    open class func getInstance() -> PluginAPI {
         fatalError("getInstanceMain")
     }
 

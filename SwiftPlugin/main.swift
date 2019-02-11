@@ -24,8 +24,9 @@ func LoadPlugin<T>(onto: T.Type, dylib: String) -> T.Type {
 
 print("Hello, World!")
 
+var tmp = 0
 var info = Dl_info()
-dladdr(&info, &info)
+dladdr(&tmp, &info)
 
 let pluginPath = URL(fileURLWithPath: String(cString: info.dli_sname)).deletingLastPathComponent()
     .appendingPathComponent("MyPlugin.bundle/Contents/MacOS/MyPlugin").path

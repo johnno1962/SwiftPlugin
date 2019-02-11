@@ -14,9 +14,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>SwiftPluginApp.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>BB8A4AB3221163E800F315B2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>BBC6E0532210835600635FD6</key>
 		<dict>
 			<key>primary</key>
